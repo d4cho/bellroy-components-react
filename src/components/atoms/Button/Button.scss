@@ -1,0 +1,8 @@
+.Button_container {
+    width: 100%;
+    transition: box-shadow 0.2s ease;
+}
+.Button_container:hover {
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 17px 9px -15px rgb(0 0 0 / 50%);
+}

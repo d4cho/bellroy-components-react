@@ -1,0 +1,30 @@
+.AlertBanner_container {
+    position: relative;
+    width: 100%;
+    padding: 6px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        to left,
+        #c55b16,
+        #d05244,
+        #b36367,
+        #3d6a89,
+        #2c364f
+    );
+    color: #fff;
+
+    .AlertBanner_close-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+}
+
+.AlertBanner_removed {
+    display: none;
+}
