@@ -13,7 +13,6 @@ const Navbar = () => {
         backgroundColor: 'transparent',
         color: '#e15a1d',
         border: 'none',
-        padding: '5px',
         cursor: 'pointer',
         borderRadius: '4px',
         width: 'fit-content',

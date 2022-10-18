@@ -8,7 +8,7 @@ const Button = ({ content, styleOverride, onButtonClick }) => {
             style={styleOverride}
             onClick={onButtonClick ? onButtonClick : () => {}}
         >
-            {content}
+            <span className={`${'Button_overlay'}`}>{content}</span>
         </button>
     );
 };
