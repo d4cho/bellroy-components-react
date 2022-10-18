@@ -1,0 +1,15 @@
+.InfoCardPage_container {
+    margin-top: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 768px) {
+    .InfoCardPage_container {
+        margin-top: 16px;
+        width: 100%;
+        display: block;
+    }
+}

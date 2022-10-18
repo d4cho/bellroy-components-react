@@ -43,13 +43,26 @@ const Navbar = () => {
                                         }
                                     />
                                 </div>
-                                <div className='Navbar_links'>
+                                <div
+                                    className='Navbar_links'
+                                    onClick={() => setIsSideDrawerOpen(false)}
+                                >
                                     <Link to={'/'}>
                                         <div className='Navbar_link'>home</div>
                                     </Link>
                                     <Link to={'/alert-banner'}>
                                         <div className='Navbar_link'>
                                             alert banner
+                                        </div>
+                                    </Link>
+                                    <Link to={'/image-gallery-hero'}>
+                                        <div className='Navbar_link'>
+                                            image gallery hero
+                                        </div>
+                                    </Link>
+                                    <Link to={'/info-card'}>
+                                        <div className='Navbar_link'>
+                                            info card
                                         </div>
                                     </Link>
                                 </div>
@@ -69,6 +82,12 @@ const Navbar = () => {
                 </Link>
                 <Link to={'/alert-banner'}>
                     <div className='Navbar_link'>alert banner</div>
+                </Link>
+                <Link to={'/image-gallery-hero'}>
+                    <div className='Navbar_link'>image gallery hero</div>
+                </Link>
+                <Link to={'/info-card'}>
+                    <div className='Navbar_link'>info card</div>
                 </Link>
             </div>
         </div>
