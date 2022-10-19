@@ -70,6 +70,11 @@ const Navbar = () => {
                                             expandable list
                                         </div>
                                     </Link>
+                                    <Link to={'/product-card'}>
+                                        <div className='Navbar_link'>
+                                            product card
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -96,6 +101,9 @@ const Navbar = () => {
                 </Link>
                 <Link to={'/expandable-list'}>
                     <div className='Navbar_link'>expandable list</div>
+                </Link>
+                <Link to={'/product-card'}>
+                    <div className='Navbar_link'>product card</div>
                 </Link>
             </div>
         </div>
