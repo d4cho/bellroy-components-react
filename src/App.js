@@ -6,6 +6,7 @@ import AlertBannerPage from './components/views/AlertBannerPage/AlertBannerPage'
 import Navbar from './components/organisms/Navbar/Navbar';
 import ImageGalleryHeroPage from './components/views/ImageGalleryHeroPage/ImageGalleryHeroPage';
 import InfoCardPage from './components/views/InfoCardPage/InfoCardPage';
+import ExpandableListPage from './components/views/ExpandableListPage/ExpandableListPage';
 
 const App = () => {
     return (
@@ -26,6 +27,10 @@ const App = () => {
                         <Route
                             path='/info-card'
                             element={<InfoCardPage />}
+                        ></Route>
+                        <Route
+                            path='/expandable-list'
+                            element={<ExpandableListPage />}
                         ></Route>
                     </Routes>
                 </div>
