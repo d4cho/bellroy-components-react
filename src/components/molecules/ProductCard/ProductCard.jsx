@@ -67,9 +67,11 @@ const ProductCard = ({
             className='ProductCard_container'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            onClick={handleCardClick}
         >
-            <div className={`ProductCard_button ${isHovered && 'show'}`}>
+            <div
+                className={`ProductCard_button ${isHovered && 'show'}`}
+                onClick={handleCardClick}
+            >
                 SHOW INSIDE +
             </div>
             <img
