@@ -28,9 +28,9 @@
 
     .Accordion_content {
         margin: 14px 0;
-
-        overflow: hidden;
         max-height: var(--maxHeight);
         transition: max-height 0.5s ease-in-out;
+
+        overflow: hidden;
     }
 }
