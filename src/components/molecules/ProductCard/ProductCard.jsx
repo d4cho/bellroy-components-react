@@ -17,7 +17,12 @@ const ProductCard = ({
     const [selectedIdx, setSelectedIdx] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
 
-    const colors = images.map((image) => image.colorCode);
+    const colors = images.map((image) => {
+        return {
+            colorCode: image.colorCode,
+            colorName: image.colorName,
+        };
+    });
 
     const handleDotClick = (idx) => {
         setSelectedIdx(idx);

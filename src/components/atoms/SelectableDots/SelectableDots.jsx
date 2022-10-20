@@ -1,4 +1,5 @@
 import React from 'react';
+import { useAppContext } from '../../../context/AppContext';
 import './SelectableDots.scss';
 
 const SelectableDots = ({
@@ -8,26 +9,34 @@ const SelectableDots = ({
     onDotClick,
     maxDots,
 }) => {
+    const { isMobileView } = useAppContext();
+
+    console.log(colorsArr);
+
     return (
         <div className='SelectableDots_container'>
-            {colorsArr.map((colorCode, idx) => {
-                if (idx + 1 > maxDots) return;
+            {colorsArr.map((color, idx) => {
+                if (isMobileView && idx + 1 > maxDots) return;
                 return (
                     <div
                         className={`SelectableDots_dot ${
                             selectedIdx === idx && 'SelectableDots_selected'
                         }`}
-                        key={colorCode}
+                        key={color.colorName + idx}
                         style={{
-                            '--color': `${colorCode}`,
+                            '--color': `${color.colorCode}`,
                             '--size': `${size}px`,
                         }}
                         onClick={() => onDotClick(idx)}
-                    />
+                    >
+                        <div className='SelectableDots_tooltip'>
+                            {color.colorName}
+                        </div>
+                    </div>
                 );
             })}
 
-            {colorsArr.length > maxDots && (
+            {isMobileView && colorsArr.length > maxDots && (
                 <div className='SelectableDots_more'>{`+ ${
                     colorsArr.length - maxDots
                 } more`}</div>
