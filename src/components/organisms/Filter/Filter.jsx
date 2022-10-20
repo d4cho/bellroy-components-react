@@ -83,6 +83,7 @@ const Filter = () => {
                                                 checked={filters[
                                                     filterCategory.heading
                                                 ].includes(item.text)}
+                                                readOnly
                                             />
                                             {filters[
                                                 filterCategory.heading

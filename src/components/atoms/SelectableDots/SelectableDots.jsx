@@ -11,8 +11,6 @@ const SelectableDots = ({
 }) => {
     const { isMobileView } = useAppContext();
 
-    console.log(colorsArr);
-
     return (
         <div className='SelectableDots_container'>
             {colorsArr.map((color, idx) => {

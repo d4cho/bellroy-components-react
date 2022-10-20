@@ -18,10 +18,19 @@
         }
 
         .Accordion_icon {
+            transition: transform 0.5s linear;
+        }
+
+        .collapsed_rotate {
+            transform: rotate(-180deg);
         }
     }
 
     .Accordion_content {
         margin: 14px 0;
+
+        overflow: hidden;
+        max-height: var(--maxHeight);
+        transition: max-height 0.5s ease-in-out;
     }
 }

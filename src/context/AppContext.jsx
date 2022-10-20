@@ -37,9 +37,9 @@ export const AppContextProvider = ({ children }) => {
         });
     };
 
-    useEffect(() => {
-        console.log(filters);
-    }, [filters]);
+    // useEffect(() => {
+    //     console.log(filters);
+    // }, [filters]);
 
     return (
         <AppContext.Provider

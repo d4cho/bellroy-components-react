@@ -1,9 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Accordion.scss';
-import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
+import { FiChevronUp } from 'react-icons/fi';
 
 const Accordion = ({ heading, content, headingContainerStyleOverride }) => {
     const [isExpanded, setIsExpanded] = useState(true);
+
+    const [height, setHeight] = useState(240);
+    const contentRef = useRef(null);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setHeight(contentRef.current.clientHeight);
+        }, 300);
+    }, []);
 
     return (
         <div className='Accordion_container'>
@@ -12,15 +21,23 @@ const Accordion = ({ heading, content, headingContainerStyleOverride }) => {
                 onClick={() => setIsExpanded(!isExpanded)}
             >
                 <div className='Accordion_headingText'>{heading}</div>
-                <div className={`Accordion_icon ${!isExpanded && 'collapsed'}`}>
-                    {isExpanded ? (
-                        <FiChevronUp color={'#333333'} size={20} />
-                    ) : (
-                        <FiChevronDown color={'#333333'} size={20} />
-                    )}
+                <div
+                    className={`Accordion_icon ${
+                        !isExpanded && 'collapsed_rotate'
+                    }`}
+                >
+                    <FiChevronUp color={'#333333'} size={20} />
                 </div>
             </div>
-            {isExpanded && <div className='Accordion_content'>{content}</div>}
+            <div
+                className='Accordion_content'
+                ref={contentRef}
+                style={{
+                    '--maxHeight': isExpanded ? `${height}px` : '0px',
+                }}
+            >
+                {content}
+            </div>
         </div>
     );
 };
