@@ -105,6 +105,9 @@ const Navbar = () => {
                 <Link to={'/product-card'}>
                     <div className='Navbar_link'>product card</div>
                 </Link>
+                <Link to={'/accordion'}>
+                    <div className='Navbar_link'>accordion</div>
+                </Link>
             </div>
         </div>
     );

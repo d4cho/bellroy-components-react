@@ -15,8 +15,36 @@ export const AppContextProvider = ({ children }) => {
             .addEventListener('change', (e) => setIsMobileView(e.matches));
     }, []);
 
+    const [filters, setFilters] = useState({
+        Color: [],
+        Category: [],
+        Feature: [],
+        Storage: [],
+        'Bag size': [],
+        Use: [],
+        Material: [],
+    });
+
+    const resetFilters = () => {
+        setFilters({
+            Color: [],
+            Category: [],
+            Feature: [],
+            Storage: [],
+            'Bag size': [],
+            Use: [],
+            Material: [],
+        });
+    };
+
+    useEffect(() => {
+        console.log(filters);
+    }, [filters]);
+
     return (
-        <AppContext.Provider value={{ isMobileView }}>
+        <AppContext.Provider
+            value={{ isMobileView, filters, setFilters, resetFilters }}
+        >
             {children}
         </AppContext.Provider>
     );

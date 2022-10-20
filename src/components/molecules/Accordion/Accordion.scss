@@ -1,0 +1,27 @@
+.Accordion_container {
+    width: 100%;
+
+    .Accordion_headingContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #dbdbdb;
+        padding: 15px 0 7px;
+        cursor: pointer;
+
+        .Accordion_headingText {
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: #333333;
+            user-select: none;
+            font-weight: bold;
+        }
+
+        .Accordion_icon {
+        }
+    }
+
+    .Accordion_content {
+        margin: 14px 0;
+    }
+}

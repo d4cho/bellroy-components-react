@@ -8,6 +8,7 @@ import ImageGalleryHeroPage from './components/views/ImageGalleryHeroPage/ImageG
 import InfoCardPage from './components/views/InfoCardPage/InfoCardPage';
 import ExpandableListPage from './components/views/ExpandableListPage/ExpandableListPage';
 import ProductCardPage from './components/views/ProductCardPage/ProductCardPage';
+import AccordionPage from './components/views/AccordionPage/AccordionPage';
 
 const App = () => {
     return (
@@ -36,6 +37,10 @@ const App = () => {
                         <Route
                             path='/product-card'
                             element={<ProductCardPage />}
+                        ></Route>
+                        <Route
+                            path='/accordion'
+                            element={<AccordionPage />}
                         ></Route>
                     </Routes>
                 </div>

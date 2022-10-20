@@ -1,0 +1,10 @@
+.AccordionPage_container {
+    background-color: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .AccordionPage_example {
+        margin-bottom: 48px;
+    }
+}
