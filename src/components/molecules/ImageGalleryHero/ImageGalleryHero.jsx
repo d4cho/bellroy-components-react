@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import './ImageGalleryHero.scss';
 import Button from '../../atoms/Button/Button';
 import { Link } from 'react-router-dom';
@@ -68,11 +68,6 @@ const ImageGalleryHero = ({
                     );
                 })[currRightIdx]
             }
-
-            {/* <div
-                className='ImageGalleryHero_rightImage'
-                style={{ backgroundImage: `url(${rightImages[currRightIdx]})` }}
-            ></div> */}
 
             <div className='ImageGalleryHero_content'>
                 <div className='ImageGalleryHero_heading'>{heading}</div>
