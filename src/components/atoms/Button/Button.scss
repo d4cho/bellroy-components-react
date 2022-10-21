@@ -17,3 +17,22 @@
         box-shadow: 0 17px 9px -15px rgb(0 0 0 / 50%);
     }
 }
+
+.Button_container-outlined {
+    width: 100%;
+    padding: 0;
+
+    user-select: none;
+    letter-spacing: 1px;
+    font-size: 13px;
+    color: #333333;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.Button_container-outlined:hover {
+    color: #e15a1d;
+    border: 1px solid #e15a1d;
+}

@@ -5,6 +5,15 @@
     align-items: center;
 
     .AccordionPage_example {
+        width: 320px;
         margin-bottom: 48px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .AccordionPage_container {
+        .AccordionPage_example {
+            width: 100%;
+        }
     }
 }

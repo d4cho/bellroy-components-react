@@ -2,7 +2,12 @@ import React, { useState, useRef, useEffect } from 'react';
 import './Accordion.scss';
 import { FiChevronUp } from 'react-icons/fi';
 
-const Accordion = ({ heading, content, headingContainerStyleOverride }) => {
+const Accordion = ({
+    heading,
+    content,
+    headingContainerStyleOverride,
+    showOverflow,
+}) => {
     const [isExpanded, setIsExpanded] = useState(true);
 
     const [height, setHeight] = useState(240);
@@ -12,7 +17,7 @@ const Accordion = ({ heading, content, headingContainerStyleOverride }) => {
         setTimeout(() => {
             setHeight(contentRef.current.clientHeight);
         }, 300);
-    }, []);
+    }, [height]);
 
     return (
         <div className='Accordion_container'>
@@ -34,6 +39,7 @@ const Accordion = ({ heading, content, headingContainerStyleOverride }) => {
                 ref={contentRef}
                 style={{
                     '--maxHeight': isExpanded ? `${height}px` : '0px',
+                    overflow: showOverflow && isExpanded ? 'visible' : 'hidden',
                 }}
             >
                 {content}
