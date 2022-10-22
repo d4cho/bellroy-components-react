@@ -75,6 +75,11 @@ const Navbar = () => {
                                             product card
                                         </div>
                                     </Link>
+                                    <Link to={'/accordion'}>
+                                        <div className='Navbar_link'>
+                                            accordion
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

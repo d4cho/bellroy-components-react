@@ -4,7 +4,6 @@ import './Filter.scss';
 import { colorsData, filterData } from '../../../assets/data/filter-data';
 import { useAppContext } from '../../../context/AppContext';
 import { FaCheck } from 'react-icons/fa';
-import { GoSettings } from 'react-icons/go';
 import Button from '../../atoms/Button/Button';
 
 const Filter = () => {
@@ -20,39 +19,12 @@ const Filter = () => {
         setFilters({ ...filters, [category]: newCategory });
     };
 
-    // if (isMobileView) {
-    //     return (
-    //         <div style={{ marginTop: '24px' }}>
-    //             <Button
-    //                 content={
-    //                     <div
-    //                         style={{
-    //                             display: 'flex',
-    //                             justifyContent: 'space-between',
-    //                             alignItems: 'center',
-    //                         }}
-    //                     >
-    //                         <GoSettings />
-    //                         Filters
-    //                     </div>
-    //                 }
-    //                 onButtonClick={() => {}}
-    //                 outlined={true}
-    //                 styleOverride={{
-    //                     fontSize: '13px',
-    //                     width: '97px',
-    //                     padding: '7px 14px',
-    //                 }}
-    //             />
-    //         </div>
-    //     );
-    // }
-
     const renderFilterColorSection = () => {
         if (isMobileView) {
             return colorsData.map((color) => {
                 return (
                     <div
+                        key={color.colorName}
                         className='Filter_colors'
                         onClick={() =>
                             handleColorClick('Color', color.colorName)
@@ -163,18 +135,20 @@ const Filter = () => {
                     </div>
                 );
             })}
-            <div className='Filter_buttonContainer'>
-                <Button
-                    content={'CLEAR ALL FILTERS'}
-                    onButtonClick={resetFilters}
-                    outlined={true}
-                    styleOverride={{
-                        fontSize: '11px',
-                        width: '162px',
-                        padding: '8px',
-                    }}
-                />
-            </div>
+            {!isMobileView && (
+                <div className='Filter_buttonContainer'>
+                    <Button
+                        content={'CLEAR ALL FILTERS'}
+                        onButtonClick={resetFilters}
+                        outlined={true}
+                        styleOverride={{
+                            fontSize: '11px',
+                            width: '162px',
+                            padding: '8px',
+                        }}
+                    />
+                </div>
+            )}
         </div>
     );
 };

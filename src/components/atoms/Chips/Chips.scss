@@ -1,0 +1,13 @@
+.Chips_container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-gap: 8px;
+    color: #fff;
+    background-color: #333;
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 25px;
+    user-select: none;
+    cursor: pointer;
+}

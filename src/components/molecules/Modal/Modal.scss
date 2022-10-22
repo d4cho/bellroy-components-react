@@ -1,0 +1,34 @@
+.Modal_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    translate: 0 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+    .Modal_header {
+        width: 100%;
+    }
+
+    .Modal_content {
+        background-color: aqua;
+        overflow-y: scroll;
+        flex-grow: 1;
+    }
+
+    .Modal_footer {
+        width: 100%;
+    }
+}
+
+.Modal_open {
+    translate: 0 0;
+    visibility: visible;
+    opacity: 1;
+}

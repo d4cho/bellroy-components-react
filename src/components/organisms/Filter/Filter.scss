@@ -116,6 +116,7 @@
 
 @media only screen and (max-width: 768px) {
     .Filter_container {
+        margin-top: 0;
         .Filter_section {
             font-size: 13px;
 
@@ -124,7 +125,7 @@
                 grid-template-columns: 23px auto;
                 grid-gap: 16px;
                 align-items: center;
-                padding-bottom: 16px;
+                margin-bottom: 16px;
                 cursor: pointer;
 
                 .Filter_color_name {
