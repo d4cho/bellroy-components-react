@@ -10,6 +10,7 @@ import ExpandableListPage from './components/views/ExpandableListPage/Expandable
 import ProductCardPage from './components/views/ProductCardPage/ProductCardPage';
 import AccordionPage from './components/views/AccordionPage/AccordionPage';
 import CartPage from './components/views/CartPage/CartPage';
+import CategoryNavPage from './components/views/CategoryNavPage/CategoryNavPage';
 
 const App = () => {
     return (
@@ -44,6 +45,10 @@ const App = () => {
                             element={<AccordionPage />}
                         ></Route>
                         <Route path='/cart' element={<CartPage />}></Route>
+                        <Route
+                            path='/category-nav'
+                            element={<CategoryNavPage />}
+                        ></Route>
                     </Routes>
                 </div>
             </BrowserRouter>

@@ -48,40 +48,47 @@ const Navbar = () => {
                                     onClick={() => setIsSideDrawerOpen(false)}
                                 >
                                     <Link to={'/'}>
-                                        <div className='Navbar_link'>home</div>
+                                        <div className='Navbar_link'>Home</div>
                                     </Link>
                                     <Link to={'/alert-banner'}>
                                         <div className='Navbar_link'>
-                                            alert banner
+                                            Alert Banner
                                         </div>
                                     </Link>
                                     <Link to={'/image-gallery-hero'}>
                                         <div className='Navbar_link'>
-                                            image gallery hero
+                                            Hero (Image Gallery)
                                         </div>
                                     </Link>
                                     <Link to={'/info-card'}>
                                         <div className='Navbar_link'>
-                                            info card
+                                            Info Card
                                         </div>
                                     </Link>
                                     <Link to={'/expandable-list'}>
                                         <div className='Navbar_link'>
-                                            expandable list
+                                            Expandable List
                                         </div>
                                     </Link>
                                     <Link to={'/product-card'}>
                                         <div className='Navbar_link'>
-                                            product card
+                                            Product Card
                                         </div>
                                     </Link>
                                     <Link to={'/accordion'}>
                                         <div className='Navbar_link'>
-                                            accordion
+                                            Accordion (Filter)
                                         </div>
                                     </Link>
                                     <Link to={'/cart'}>
-                                        <div className='Navbar_link'>cart</div>
+                                        <div className='Navbar_link'>
+                                            Shopping Cart
+                                        </div>
+                                    </Link>
+                                    <Link to={'/category-nav'}>
+                                        <div className='Navbar_link'>
+                                            Category Nav
+                                        </div>
                                     </Link>
                                 </div>
                             </div>
@@ -96,28 +103,31 @@ const Navbar = () => {
         <div className='Navbar_container'>
             <div className='Navbar_links'>
                 <Link to={'/'}>
-                    <div className='Navbar_link'>home</div>
+                    <div className='Navbar_link'>Home</div>
                 </Link>
                 <Link to={'/alert-banner'}>
-                    <div className='Navbar_link'>alert banner</div>
+                    <div className='Navbar_link'>Alert Banner</div>
                 </Link>
                 <Link to={'/image-gallery-hero'}>
-                    <div className='Navbar_link'>image gallery hero</div>
+                    <div className='Navbar_link'>Hero (Image Gallery)</div>
                 </Link>
                 <Link to={'/info-card'}>
-                    <div className='Navbar_link'>info card</div>
+                    <div className='Navbar_link'>Info Card</div>
                 </Link>
                 <Link to={'/expandable-list'}>
-                    <div className='Navbar_link'>expandable list</div>
+                    <div className='Navbar_link'>Expandable List</div>
                 </Link>
                 <Link to={'/product-card'}>
-                    <div className='Navbar_link'>product card</div>
+                    <div className='Navbar_link'>Product Card</div>
                 </Link>
                 <Link to={'/accordion'}>
-                    <div className='Navbar_link'>accordion</div>
+                    <div className='Navbar_link'>Accordion (Filter)</div>
                 </Link>
                 <Link to={'/cart'}>
-                    <div className='Navbar_link'>cart</div>
+                    <div className='Navbar_link'>Shopping Cart</div>
+                </Link>
+                <Link to={'/category-nav'}>
+                    <div className='Navbar_link'>Category Nav</div>
                 </Link>
             </div>
         </div>
