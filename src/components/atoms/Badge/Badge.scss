@@ -1,0 +1,15 @@
+.Badge_container {
+    border: 2px solid #fff;
+    background-color: #e15a1d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 10px;
+}

@@ -1,7 +1,12 @@
 import React from 'react';
 import './Dropdown.scss';
 
-const Dropdown = ({ options, onDropdownChange, styleOverride }) => {
+const Dropdown = ({
+    defaultValue,
+    options,
+    onDropdownChange,
+    styleOverride,
+}) => {
     const handleOnChange = (e) => {
         onDropdownChange(e.target.value);
     };
@@ -13,6 +18,7 @@ const Dropdown = ({ options, onDropdownChange, styleOverride }) => {
             name='filter-by'
             onChange={handleOnChange}
             style={styleOverride}
+            value={defaultValue}
         >
             {options.map((option, idx) => {
                 return (

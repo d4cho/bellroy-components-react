@@ -106,7 +106,10 @@ const MobileFilterBar = () => {
                 )}
             </div>
             <Modal
+                position={'fullscreen'}
+                slideFrom={'bottom'}
                 isModalOpen={isModalOpen}
+                setIsModalOpen={setIsModalOpen}
                 modalHeader={
                     <div className='Filter_Modal_Header_Container'>
                         <button

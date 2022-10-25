@@ -80,6 +80,9 @@ const Navbar = () => {
                                             accordion
                                         </div>
                                     </Link>
+                                    <Link to={'/cart'}>
+                                        <div className='Navbar_link'>cart</div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -112,6 +115,9 @@ const Navbar = () => {
                 </Link>
                 <Link to={'/accordion'}>
                     <div className='Navbar_link'>accordion</div>
+                </Link>
+                <Link to={'/cart'}>
+                    <div className='Navbar_link'>cart</div>
                 </Link>
             </div>
         </div>

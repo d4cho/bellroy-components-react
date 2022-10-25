@@ -9,6 +9,7 @@ import InfoCardPage from './components/views/InfoCardPage/InfoCardPage';
 import ExpandableListPage from './components/views/ExpandableListPage/ExpandableListPage';
 import ProductCardPage from './components/views/ProductCardPage/ProductCardPage';
 import AccordionPage from './components/views/AccordionPage/AccordionPage';
+import CartPage from './components/views/CartPage/CartPage';
 
 const App = () => {
     return (
@@ -42,6 +43,7 @@ const App = () => {
                             path='/accordion'
                             element={<AccordionPage />}
                         ></Route>
+                        <Route path='/cart' element={<CartPage />}></Route>
                     </Routes>
                 </div>
             </BrowserRouter>
