@@ -1,0 +1,122 @@
+.CategoryNav_container {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 1px 14px 21px;
+
+    .CategoryNav_title {
+        font-size: 16px;
+        letter-spacing: 2px;
+        line-height: 1.75rem;
+        margin: 1.5rem 0;
+        font-weight: bold;
+    }
+
+    .CategoryNav_nav {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(9, auto);
+            justify-content: center;
+            grid-gap: 10px;
+            padding: 0;
+
+            li {
+                list-style-type: none;
+
+                .CategoryNav_link {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 121.5px;
+                    text-decoration: none;
+                    color: #666666;
+
+                    .CategoryNav_new {
+                        font-size: 11px;
+                        color: #fff;
+                        background-color: #88b2ab;
+                        padding: 0 5px;
+                    }
+
+                    .CategoryNav_image {
+                        width: 90px;
+                        height: 90px;
+                        border-radius: 50%;
+                    }
+
+                    .resize {
+                        width: 68px;
+                        height: 68px;
+                    }
+
+                    .CategoryNav_category {
+                        font-size: 13px;
+                        margin-top: 10.5px;
+                        line-height: 1.5rem;
+                        letter-spacing: 1px;
+                        font-weight: bold;
+                    }
+
+                    .custom_margin {
+                        margin-top: 14.5px;
+                    }
+                }
+
+                .CategoryNav_link:hover {
+                    color: #e15a1d;
+                }
+            }
+        }
+
+        .CategoryNav_swiper {
+            .CategoryNav_link {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: #666666;
+                margin: 0 auto;
+                margin-bottom: 30px;
+
+                .CategoryNav_new {
+                    font-size: 11px;
+                    color: #fff;
+                    background-color: #88b2ab;
+                    padding: 0 5px;
+                }
+
+                .CategoryNav_image {
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 50%;
+                }
+
+                .resize {
+                    width: 68px;
+                    height: 68px;
+                }
+
+                .CategoryNav_category {
+                    font-size: 13px;
+                    margin-top: 10.5px;
+                    line-height: 1.5rem;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                }
+
+                .custom_margin {
+                    margin-top: 14.5px;
+                }
+            }
+
+            .CategoryNav_link:hover {
+                color: #e15a1d;
+            }
+        }
+    }
+}
+
+.swiper-pagination-bullets {
+    bottom: 0px !important;
+}

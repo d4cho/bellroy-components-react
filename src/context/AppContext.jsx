@@ -18,6 +18,16 @@ export const AppContextProvider = ({ children }) => {
             .addEventListener('change', (e) => setIsMobileView(e.matches));
     }, []);
 
+    const [isTabletView, setIsTabletView] = useState(
+        window.matchMedia('(max-width: 1024px)').matches
+    );
+
+    useEffect(() => {
+        window
+            .matchMedia('(max-width: 768px)')
+            .addEventListener('change', (e) => setIsTabletView(e.matches));
+    }, []);
+
     const [filters, setFilters] = useState({
         Color: [],
         Category: [],
@@ -79,6 +89,7 @@ export const AppContextProvider = ({ children }) => {
         <AppContext.Provider
             value={{
                 isMobileView,
+                isTabletView,
                 filters,
                 setFilters,
                 resetFilters,

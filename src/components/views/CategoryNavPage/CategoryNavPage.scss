@@ -1,2 +1,17 @@
 .CategoryNavPage_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .CategoryNavPage_top {
+        height: 100%;
+        background-color: #e15a1d;
+    }
+
+    .CategoryNavPage_bottom {
+        height: 100%;
+        background-color: #333333;
+    }
 }
