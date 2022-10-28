@@ -1,0 +1,96 @@
+.Newsletter_container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 470px auto;
+    width: 1040px;
+    height: 490px;
+    background-color: #efeae5;
+
+    .Newsletter_image {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 470px;
+        background-color: transparent;
+    }
+
+    .Newsletter_content {
+        align-self: center;
+        margin-right: 70px;
+
+        .Newsletter_close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            cursor: pointer;
+        }
+
+        .Newsletter_eyebrow {
+            font-size: 13px;
+            color: #333333;
+            line-height: 1.5rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .Newsletter_header {
+            font-size: 38.5px;
+            padding: 0.25rem 0 1rem;
+            letter-spacing: normal;
+            line-height: 3.5rem;
+            color: #e15a1d;
+        }
+
+        .Newsletter_input {
+            margin-bottom: 18px;
+        }
+
+        .Newsletter_legal {
+            font-size: 11px;
+            color: #9b9b9b;
+            line-height: 1.15rem;
+            letter-spacing: 0.5px;
+
+            span {
+                color: #e15a1d;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Newsletter_container {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        max-width: 346px;
+        min-height: 520px;
+        background-color: #efeae5;
+
+        .Newsletter_image {
+            position: relative;
+        }
+
+        .Newsletter_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 58px 18px 0;
+            margin-right: 0px;
+
+            .Newsletter_header {
+                font-size: 24.5px;
+                text-align: center;
+                line-height: 2.5rem;
+            }
+
+            .Newsletter_legal {
+                text-align: center;
+            }
+        }
+    }
+}

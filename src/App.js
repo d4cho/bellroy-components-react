@@ -11,6 +11,7 @@ import ProductCardPage from './components/views/ProductCardPage/ProductCardPage'
 import AccordionPage from './components/views/AccordionPage/AccordionPage';
 import CartPage from './components/views/CartPage/CartPage';
 import CategoryNavPage from './components/views/CategoryNavPage/CategoryNavPage';
+import NewsletterModalPage from './components/views/NewsletterModalPage/NewsletterModalPage';
 
 const App = () => {
     return (
@@ -48,6 +49,10 @@ const App = () => {
                         <Route
                             path='/category-nav'
                             element={<CategoryNavPage />}
+                        ></Route>
+                        <Route
+                            path='/newsletter-modal'
+                            element={<NewsletterModalPage />}
                         ></Route>
                     </Routes>
                 </div>

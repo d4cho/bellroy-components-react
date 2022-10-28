@@ -90,6 +90,11 @@ const Navbar = () => {
                                             Category Nav
                                         </div>
                                     </Link>
+                                    <Link to={'/newsletter-modal'}>
+                                        <div className='Navbar_link'>
+                                            Newsletter Modal
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -128,6 +133,9 @@ const Navbar = () => {
                 </Link>
                 <Link to={'/category-nav'}>
                     <div className='Navbar_link'>Category Nav</div>
+                </Link>
+                <Link to={'/newsletter-modal'}>
+                    <div className='Navbar_link'>Newsletter Modal</div>
                 </Link>
             </div>
         </div>

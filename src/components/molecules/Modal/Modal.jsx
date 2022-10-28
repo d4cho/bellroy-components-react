@@ -2,11 +2,13 @@ import React from 'react';
 import './Modal.scss';
 
 const Modal = ({
+    bgColor,
     width,
     position,
     slideFrom,
     isModalOpen,
     setIsModalOpen,
+    onBackdropClick,
     modalContent,
     modalHeader,
     modalFooter,
@@ -21,6 +23,13 @@ const Modal = ({
 
             case 'right':
                 return { top: '0px', right: '0px', bottom: '0px' };
+
+            case 'center':
+                return {
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                };
 
             default:
                 return { top: '0px', left: '0px', right: '0px', bottom: '0px' };
@@ -46,11 +55,19 @@ const Modal = ({
         }
     };
 
+    const handleBackdropClick = () => {
+        if (onBackdropClick) {
+            onBackdropClick();
+        }
+        setIsModalOpen(false);
+    };
+
     return (
         <>
             <div
                 className={`Modal_modal ${isModalOpen && 'Modal_open'}`}
                 style={{
+                    '--bgColor': bgColor ? bgColor : '#fff',
                     '--width': width ? width : '100%',
                     '--translate': getSlideAnim(slideFrom),
                     ...getPosition(position),
@@ -65,10 +82,7 @@ const Modal = ({
                 )}
             </div>
             {isModalOpen && (
-                <div
-                    className='Modal_backdrop'
-                    onClick={() => setIsModalOpen(false)}
-                />
+                <div className='Modal_backdrop' onClick={handleBackdropClick} />
             )}
         </>
     );

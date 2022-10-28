@@ -1,9 +1,5 @@
 .Modal_modal {
     position: fixed;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    // bottom: 0;
     display: flex;
     flex-direction: column;
     z-index: 999;
@@ -11,10 +7,10 @@
 
     opacity: 0;
     visibility: hidden;
-    // translate: 0 100%;
     translate: var(--translate);
     transition: all 0.5s ease-in-out;
     width: var(--width);
+    background-color: var(--bgColor);
 
     .Modal_header {
         width: 100%;
@@ -37,8 +33,6 @@
     right: 0;
     bottom: 0;
     background-color: #000;
-    // width: 200vw;
-    // height: 200vh;
     z-index: 888;
     opacity: 0.25;
 }

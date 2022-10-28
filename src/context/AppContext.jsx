@@ -85,6 +85,8 @@ export const AppContextProvider = ({ children }) => {
         },
     ]);
 
+    const [newsletterEmail, setNewsletterEmail] = useState('');
+
     return (
         <AppContext.Provider
             value={{
@@ -95,6 +97,8 @@ export const AppContextProvider = ({ children }) => {
                 resetFilters,
                 cartData,
                 setCartData,
+                newsletterEmail,
+                setNewsletterEmail,
             }}
         >
             {children}
