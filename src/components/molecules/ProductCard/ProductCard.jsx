@@ -3,6 +3,7 @@ import SelectableDots from '../../atoms/SelectableDots/SelectableDots';
 import { useNavigate } from 'react-router-dom';
 import './ProductCard.scss';
 import { useAppContext } from '../../../context/AppContext';
+import { GrClose } from 'react-icons/gr';
 
 const ProductCard = ({
     title,
@@ -10,12 +11,14 @@ const ProductCard = ({
     desc,
     specialTag,
     images,
+    insideImage,
     redirectUrl,
 }) => {
     const navigate = useNavigate();
     const { isMobileView } = useAppContext();
     const [selectedIdx, setSelectedIdx] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
+    const [isShowInside, setIsShowInside] = useState(false);
 
     const colors = images.map((image) => {
         return {
@@ -30,6 +33,10 @@ const ProductCard = ({
 
     const handleCardClick = () => {
         navigate(redirectUrl);
+    };
+
+    const handleShowInsideClick = () => {
+        setIsShowInside(!isShowInside);
     };
 
     if (isMobileView) {
@@ -67,6 +74,32 @@ const ProductCard = ({
         );
     }
 
+    if (isShowInside) {
+        return (
+            <div
+                className='ProductCard_container show-inside'
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+            >
+                <div
+                    className={`ProductCard_button ${isHovered && 'show'}`}
+                    onClick={handleShowInsideClick}
+                >
+                    <span className='ProductCard_close_btn'>
+                        CLOSE&nbsp;
+                        <GrClose />
+                    </span>
+                </div>
+                <img
+                    className='ProductCard_image'
+                    src={insideImage}
+                    alt={'test'}
+                    onClick={handleCardClick}
+                />
+            </div>
+        );
+    }
+
     return (
         <div
             className='ProductCard_container'
@@ -75,7 +108,7 @@ const ProductCard = ({
         >
             <div
                 className={`ProductCard_button ${isHovered && 'show'}`}
-                onClick={handleCardClick}
+                onClick={handleShowInsideClick}
             >
                 SHOW INSIDE +
             </div>

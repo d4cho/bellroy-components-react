@@ -7,7 +7,15 @@ const ProductCardPage = () => {
     return (
         <div className='ProductCardPage_container'>
             {productData.map((product) => {
-                const { id, title, price, desc, specialTag, images } = product;
+                const {
+                    id,
+                    title,
+                    price,
+                    desc,
+                    specialTag,
+                    images,
+                    insideImage,
+                } = product;
 
                 return (
                     <div className='ProductCardPage_productCard' key={id}>
@@ -17,6 +25,7 @@ const ProductCardPage = () => {
                             desc={desc}
                             specialTag={specialTag}
                             images={images}
+                            insideImage={insideImage}
                             redirectUrl={'/'}
                         />
                     </div>
