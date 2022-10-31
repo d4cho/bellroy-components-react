@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './TextInput.scss';
 import { isValid } from '../../../utils/functions';
 
@@ -12,6 +12,12 @@ const TextInput = ({
 }) => {
     const [isFocused, setIsFocused] = useState(false);
     const [hasError, setHasError] = useState(false);
+
+    useEffect(() => {
+        if (!value) {
+            setHasError(false);
+        }
+    }, [value]);
 
     const handleSubmitClick = () => {
         setHasError(!isValid(regex, value));
