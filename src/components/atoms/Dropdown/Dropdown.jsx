@@ -20,13 +20,14 @@ const Dropdown = ({
             style={styleOverride}
             value={defaultValue}
         >
-            {options.map((option, idx) => {
-                return (
-                    <option key={idx} value={option}>
-                        {option}
-                    </option>
-                );
-            })}
+            {options &&
+                options.map((option, idx) => {
+                    return (
+                        <option key={idx} value={option}>
+                            {option}
+                        </option>
+                    );
+                })}
         </select>
     );
 };

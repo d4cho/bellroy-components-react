@@ -95,6 +95,11 @@ const Navbar = () => {
                                             Newsletter Modal
                                         </div>
                                     </Link>
+                                    <Link to={'/product-detail'}>
+                                        <div className='Navbar_link'>
+                                            Product Detail Page
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -136,6 +141,9 @@ const Navbar = () => {
                 </Link>
                 <Link to={'/newsletter-modal'}>
                     <div className='Navbar_link'>Newsletter Modal</div>
+                </Link>
+                <Link to={'/product-detail'}>
+                    <div className='Navbar_link'>Product Detail Page</div>
                 </Link>
             </div>
         </div>

@@ -26,7 +26,7 @@ const ProductCardPage = () => {
                             specialTag={specialTag}
                             images={images}
                             insideImage={insideImage}
-                            redirectUrl={'/'}
+                            redirectUrl={'/product-detail'}
                         />
                     </div>
                 );

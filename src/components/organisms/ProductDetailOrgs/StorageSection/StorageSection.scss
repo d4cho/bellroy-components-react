@@ -1,0 +1,51 @@
+.StorageSection_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .StorageSection_badge {
+        position: absolute;
+        right: 0;
+        top: 0;
+        translate: 0 -50%;
+        background-color: #1c273a;
+        color: #fff;
+        border-radius: 50%;
+        height: 162px;
+        width: 162px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .StorageSection_badge_number {
+            font-size: 60px;
+            line-height: 1;
+            letter-spacing: -1;
+            margin: 0;
+        }
+
+        .StorageSection_badge_litre {
+            font-size: 40px;
+            line-height: 0;
+            margin: 0;
+        }
+
+        p {
+            font-size: 25px;
+            margin: 0;
+        }
+    }
+
+    h1 {
+        font-size: 20px;
+        color: #333333;
+        padding-top: 70px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 1300px;
+    }
+}

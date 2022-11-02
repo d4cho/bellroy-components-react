@@ -38,7 +38,7 @@ const ExpandableList = ({ title, listItems, collapsedItemsToShow }) => {
 
     return (
         <div className='ExpandableList_container'>
-            <div className='ExpandableList_title'>{title}</div>
+            {title && <div className='ExpandableList_title'>{title}</div>}
             <ul
                 className='ExpandableList_list'
                 style={{
@@ -47,7 +47,7 @@ const ExpandableList = ({ title, listItems, collapsedItemsToShow }) => {
                         : `${collapsedHeight}px`,
                 }}
             >
-                {renderListItems()}
+                {listItems && renderListItems()}
             </ul>
             <div className='ExpandableList_button'>
                 <Button

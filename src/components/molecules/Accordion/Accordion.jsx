@@ -23,6 +23,7 @@ const Accordion = ({
         <div className='Accordion_container'>
             <div
                 className='Accordion_headingContainer'
+                style={headingContainerStyleOverride}
                 onClick={() => setIsExpanded(!isExpanded)}
             >
                 <div className='Accordion_headingText'>{heading}</div>

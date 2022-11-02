@@ -1,0 +1,137 @@
+.ProductSelection_container {
+    width: 100%;
+    color: #333333;
+
+    .ProductSelection_heading_1 {
+        font-size: 25px;
+        letter-spacing: normal;
+        margin-bottom: 4px;
+        font-weight: 400;
+    }
+
+    .ProductSelection_price_shipping {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 8px;
+
+        .ProductSelection_price {
+            position: relative;
+            font-size: 25px;
+            line-height: 22px;
+            letter-spacing: 1px;
+
+            span {
+                font-size: 10px;
+                padding-left: 8px;
+                position: absolute;
+                top: -5px;
+            }
+        }
+
+        .ProductSelection_shipping {
+            font-size: 12px;
+            color: #e15a1d;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    .ProductSelection_desc {
+        margin: 6px 0 8px;
+        font-size: 14px;
+        color: #696969;
+        line-height: 21px;
+        letter-spacing: 1px;
+    }
+
+    .ProductSelection_heading_2 {
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 17px;
+        margin: 12px 0 8px;
+        font-size: 13px;
+
+        span {
+            font-weight: 400;
+        }
+    }
+
+    .ProductSelection_selectableDots {
+        margin: 6px 0 12px;
+    }
+
+    .ProductSelection_button {
+        margin: 10px 0;
+    }
+
+    .ProductSelection_shipppingDays {
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: bold;
+
+        span {
+            color: #e15a1d;
+        }
+    }
+
+    .ProductSelection_expandableList {
+        padding: 14px 0 7px;
+    }
+
+    .ProductSelection_features {
+        padding: 12px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+
+        .ProductSelection_features_item {
+            max-width: 97px;
+
+            .ProductSelection_features_item_text {
+                font-size: 11px;
+                line-height: 15px;
+                letter-spacing: 1px;
+                margin-top: 4px;
+            }
+        }
+    }
+
+    .ProductSelection_specifications {
+        color: #696969;
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 22px;
+
+        .accordion_subheading {
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 4px;
+        }
+
+        .accordion_large_font {
+            font-size: 18px;
+        }
+
+        .ProductSelection_grid_content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .ProductSelection_accordionContent {
+        color: #696969;
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 22px;
+    }
+
+    .ProductSelection_accordionExtra {
+        margin-top: 10px;
+        color: #e15a1d;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

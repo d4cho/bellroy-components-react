@@ -12,6 +12,7 @@ import AccordionPage from './components/views/AccordionPage/AccordionPage';
 import CartPage from './components/views/CartPage/CartPage';
 import CategoryNavPage from './components/views/CategoryNavPage/CategoryNavPage';
 import NewsletterModalPage from './components/views/NewsletterModalPage/NewsletterModalPage';
+import ProductDetailPage from './components/views/ProductDetailPage/ProductDetailPage';
 
 const App = () => {
     return (
@@ -53,6 +54,10 @@ const App = () => {
                         <Route
                             path='/newsletter-modal'
                             element={<NewsletterModalPage />}
+                        ></Route>
+                        <Route
+                            path='/product-detail'
+                            element={<ProductDetailPage />}
                         ></Route>
                     </Routes>
                 </div>
