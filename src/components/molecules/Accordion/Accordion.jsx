@@ -7,6 +7,7 @@ const Accordion = ({
     content,
     headingContainerStyleOverride,
     showOverflow,
+    contentContainerStyleOverride,
 }) => {
     const [isExpanded, setIsExpanded] = useState(true);
 
@@ -39,6 +40,7 @@ const Accordion = ({
                 className='Accordion_content'
                 ref={contentRef}
                 style={{
+                    ...contentContainerStyleOverride,
                     '--maxHeight': isExpanded ? `${height}px` : '0px',
                     overflow: showOverflow && isExpanded ? 'visible' : 'hidden',
                 }}

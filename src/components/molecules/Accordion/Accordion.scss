@@ -36,10 +36,11 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .Accordion_container {
-        .Accordion_content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-    }
+    // .Accordion_container {
+    //     .Accordion_content {
+    //         display: grid;
+    //         grid-template-columns: 1fr 1fr;
+    //         column-gap: 10px;
+    //     }
+    // }
 }

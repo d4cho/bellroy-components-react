@@ -49,3 +49,24 @@
         max-width: 1300px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .StorageSection_container {
+        .StorageSection_badge {
+            height: 80px;
+            width: 80px;
+
+            .StorageSection_badge_number {
+                font-size: 30px;
+            }
+
+            .StorageSection_badge_litre {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}

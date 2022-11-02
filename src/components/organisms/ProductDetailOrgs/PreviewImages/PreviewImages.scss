@@ -1,0 +1,52 @@
+.PreviewImages_container {
+    // change default SwiperJs navigation arrow colors
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: #b0b0b0 !important;
+    }
+
+    .PreviewImages_mainImage_container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        cursor: zoom-in;
+
+        img {
+        }
+
+        .isZoomed {
+            cursor: zoom-out;
+            scale: 2;
+            transform: translate(var(--transX), var(--transY));
+        }
+    }
+
+    .PreviewImages_thumbnails {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 10px;
+        margin: 8px 0 20px;
+
+        .PreviewImages_thumbnails_image_container {
+            position: relative;
+
+            img {
+                min-width: 85px;
+                cursor: pointer;
+            }
+
+            .PreviewImages_underline {
+                height: 2px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: transparent;
+            }
+
+            .selected {
+                background-color: #e15a1d;
+            }
+        }
+    }
+}

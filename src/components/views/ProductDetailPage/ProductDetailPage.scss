@@ -26,6 +26,10 @@
         width: 100%;
         padding-inline: 25%;
     }
+
+    .ProductDetailPage_backToTop {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1800px) {
@@ -40,6 +44,41 @@
 
         .ProductDetailPage_storage {
             padding-inline: 10%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ProductDetailPage_container {
+        width: 100vw;
+
+        .ProductDetailPage_main {
+            display: flex;
+            flex-direction: column;
+            padding-inline: 5%;
+        }
+
+        .ProductDetailPage_features {
+            padding-inline: 5%;
+        }
+
+        .ProductDetailPage_storage {
+            padding-inline: 5%;
+        }
+
+        .ProductDetailPage_backToTop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px 0;
+            cursor: pointer;
+
+            .ProductDetailPage_backToTop_text {
+                font-size: 14px;
+                color: #333;
+                letter-spacing: 2px;
+                font-weight: bold;
+            }
         }
     }
 }

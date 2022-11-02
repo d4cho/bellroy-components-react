@@ -88,6 +88,15 @@ const Filter = () => {
                     heading={'Color'}
                     content={renderFilterColorSection()}
                     showOverflow={true}
+                    contentContainerStyleOverride={
+                        isMobileView
+                            ? {
+                                  display: 'grid',
+                                  'grid-template-columns': '1fr 1fr',
+                                  'column-gap': '10px',
+                              }
+                            : null
+                    }
                 />
             </div>
             {/* other filters section */}
@@ -131,6 +140,15 @@ const Filter = () => {
                                     </div>
                                 );
                             })}
+                            contentContainerStyleOverride={
+                                isMobileView
+                                    ? {
+                                          display: 'grid',
+                                          'grid-template-columns': '1fr 1fr',
+                                          'column-gap': '10px',
+                                      }
+                                    : null
+                            }
                         />
                     </div>
                 );

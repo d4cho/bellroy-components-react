@@ -13,7 +13,6 @@ import { Pagination } from 'swiper';
 
 const CategoryNav = () => {
     const { isTabletView } = useAppContext();
-    console.log('isTabletView', isTabletView);
 
     return (
         <div className='CategoryNav_container'>
