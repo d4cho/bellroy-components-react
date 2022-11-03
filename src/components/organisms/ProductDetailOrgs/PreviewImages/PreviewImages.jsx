@@ -28,12 +28,12 @@ const PreviewImages = () => {
     const handleMouseMove = (e) => {
         if (!isZoomed) return;
 
-        offset.x += e.movementX;
-        offset.y += e.movementY;
+        let newX = offset.x + e.movementX;
+        let newY = offset.y + e.movementY;
 
         setOffset({
-            x: offset.x,
-            y: offset.y,
+            x: newX,
+            y: newY,
         });
     };
 
