@@ -7,3 +7,15 @@
         width: 100%;
     }
 }
+
+.AlertBannerPage_message {
+    user-select: none;
+    button {
+        cursor: pointer;
+        font-weight: bold;
+        border: none;
+        margin: 0;
+        background-color: transparent;
+        color: inherit;
+    }
+}

@@ -3,10 +3,19 @@ import AlertBanner from '../../molecules/AlertBanner/AlertBanner';
 import './AlertBannerPage.scss';
 
 const AlertBannerPage = () => {
+    const message = (
+        <div className='AlertBannerPage_message'>
+            Pixel 7 cases are here!
+            <span>
+                <button onClick={() => {}}>{'SHOP NOW >'}</button>
+            </span>
+        </div>
+    );
+
     return (
         <div className='AlertBannerPage_container'>
             <div className='AlertBannerPage_banner'>
-                <AlertBanner content={'Pixel 7 cases are here! SHOP NOW >'} />
+                <AlertBanner content={message} />
             </div>
         </div>
     );
