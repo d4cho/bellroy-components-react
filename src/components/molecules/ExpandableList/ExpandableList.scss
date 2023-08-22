@@ -9,6 +9,7 @@
     .ExpandableList_list {
         height: var(--height);
         overflow-y: hidden;
+        transition: height 0.3s ease-in-out;
     }
 
     ul {
@@ -19,6 +20,7 @@
             margin-bottom: 5px;
             color: #696969;
             opacity: var(--opacity);
+            transition: opacity 0.3s ease-in-out;
         }
     }
 
