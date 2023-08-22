@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import Button from '../../atoms/Button/Button';
 import './ExpandableList.scss';
 
-const HEIGHT_OF_EACH_ITEM = 24.51;
+const HEIGHT_OF_EACH_ITEM = 25.5;
 
 const ExpandableList = ({ title, listItems, collapsedItemsToShow }) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
-    const expandedHeight = listItems.length * HEIGHT_OF_EACH_ITEM;
+    const expandedHeight = (listItems.length + 1) * HEIGHT_OF_EACH_ITEM;
     const collapsedHeight = collapsedItemsToShow * HEIGHT_OF_EACH_ITEM;
 
     const showButtonStyle = {
