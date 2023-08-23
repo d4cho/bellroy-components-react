@@ -2,7 +2,7 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    z-index: 999;
+    z-index: 9999999999;
     background-color: #fff;
 
     opacity: 0;
@@ -27,14 +27,14 @@
 }
 
 .Modal_backdrop {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: #000;
-    z-index: 888;
-    opacity: 0.25;
+    z-index: 999999999;
+    opacity: 0.5;
 }
 
 .Modal_open {
