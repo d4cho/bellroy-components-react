@@ -43,20 +43,23 @@ const App = () => {
                             element={<ProductCardPage />}
                         ></Route>
                         <Route
-                            path='/accordion'
+                            path='/filter'
                             element={<AccordionPage />}
                         ></Route>
-                        <Route path='/cart' element={<CartPage />}></Route>
                         <Route
-                            path='/category-nav'
+                            path='/shopping-cart'
+                            element={<CartPage />}
+                        ></Route>
+                        <Route
+                            path='/menu-navbar'
                             element={<CategoryNavPage />}
                         ></Route>
                         <Route
-                            path='/newsletter-modal'
+                            path='/modal'
                             element={<NewsletterModalPage />}
                         ></Route>
                         <Route
-                            path='/product-detail'
+                            path='/product-detail-page'
                             element={<ProductDetailPage />}
                         ></Route>
                     </Routes>

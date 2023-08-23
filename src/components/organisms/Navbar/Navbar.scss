@@ -1,48 +1,17 @@
-.Navbar_container {
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    padding: 16px;
-    border-right: 2px solid #e15a1d;
-
-    .Navbar_button {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .Navbar_links {
-        display: flex;
-        flex-direction: column;
-
-        a {
-            text-decoration: none;
-            font-size: 20px;
-            color: #000;
-        }
-
-        .Navbar_link {
-            border: 2px solid #e15a1d;
-            padding: 8px;
-            margin: 8px 0;
-        }
-    }
-}
-
 .Navbar_container_mobile {
     position: relative;
     background-color: #000;
     width: 100%;
-    padding: 16px;
+    padding: 8px;
 
     .Navbar_backdrop {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
         background-color: #000;
-        opacity: 0.5;
+        opacity: 0.7;
         z-index: 1;
     }
 
@@ -50,8 +19,45 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 80vw;
         height: 100vh;
         z-index: 2;
+
+        .Navbar_container {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            padding: 10px 20px;
+
+            .Navbar_button {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .Navbar_links {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: #000;
+                }
+
+                .Navbar_link {
+                    border: 2px solid #e15a1d;
+                    padding: 8px;
+                    margin: 8px 0;
+
+                    &:hover {
+                        background-color: #e15a1d;
+                    }
+
+                    &--current {
+                        background-color: #e15a1d;
+                    }
+                }
+            }
+        }
     }
 }
