@@ -13,21 +13,21 @@
 // }
 
 .App_container {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
 
     .App_views {
         height: 100vh;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .App_container {
-        display: flex;
-        flex-direction: column;
+// @media only screen and (max-width: 768px) {
+//     .App_container {
+//         display: flex;
+//         flex-direction: column;
 
-        .App_views {
-            height: 100%;
-        }
-    }
-}
+//         .App_views {
+//             height: 100%;
+//         }
+//     }
+// }
