@@ -7,6 +7,16 @@
     // padding: 8px;
     z-index: 999999999;
 
+    .Navbar_start-here {
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        color: #fff;
+        font-size: 30px;
+        display: flex;
+        column-gap: 1rem;
+    }
+
     .Navbar_backdrop {
         position: fixed;
         top: 0;

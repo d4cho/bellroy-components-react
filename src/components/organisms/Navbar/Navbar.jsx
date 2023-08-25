@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Button from '../../atoms/Button/Button';
 import './Navbar.scss';
 import { IoClose, IoMenu } from 'react-icons/io5';
+import { BsArrow90DegUp } from 'react-icons/bs';
 
 const LINKS = [
     {
@@ -54,6 +55,13 @@ const LINKS = [
 const Navbar = () => {
     const location = useLocation();
     const [isSideDrawerOpen, setIsSideDrawerOpen] = useState(false);
+    const [showMsg, setShowMsg] = useState(true);
+
+    useEffect(() => {
+        if (isSideDrawerOpen) {
+            setShowMsg(false);
+        }
+    }, [isSideDrawerOpen]);
 
     const toggleButtonStyle = {
         backgroundColor: 'transparent',
@@ -71,6 +79,11 @@ const Navbar = () => {
                 styleOverride={toggleButtonStyle}
                 onButtonClick={() => setIsSideDrawerOpen(true)}
             />
+            {showMsg && (
+                <div className='Navbar_start-here'>
+                    <BsArrow90DegUp /> See components here
+                </div>
+            )}
             {isSideDrawerOpen && (
                 <>
                     <div
