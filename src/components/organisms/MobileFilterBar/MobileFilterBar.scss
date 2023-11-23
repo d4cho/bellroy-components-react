@@ -1,94 +1,94 @@
 .MobileFilterBar_container {
-    margin-top: 32px;
-    background-color: #fff;
-    padding: 16px;
-    letter-spacing: 1px;
+  margin-top: 32px;
+  background-color: #fff;
+  padding: 16px;
+  letter-spacing: 1px;
 
-    .MobileFilterBar_topbar {
+  .MobileFilterBar_topbar {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    align-items: center;
+    padding-bottom: 16px;
+
+    .MobileFilterBar_left {
+      display: flex;
+      align-items: center;
+
+      .MobileFilterBar_button {
         display: grid;
-        grid-template-columns: 1fr 0.5fr;
+        grid-template-columns: 1fr auto;
         align-items: center;
-        padding-bottom: 16px;
+        grid-gap: 8px;
+      }
 
-        .MobileFilterBar_left {
-            display: flex;
-            align-items: center;
-
-            .MobileFilterBar_button {
-                display: grid;
-                grid-template-columns: 1fr auto;
-                align-items: center;
-                grid-gap: 8px;
-            }
-
-            .MobileFilterBar_items {
-                padding-left: 16px;
-            }
-        }
+      .MobileFilterBar_items {
+        padding-left: 16px;
+      }
     }
+  }
 
-    .MobileFilterBar_chips_container {
-        display: flex;
-        flex-wrap: wrap;
+  .MobileFilterBar_chips_container {
+    display: flex;
+    flex-wrap: wrap;
 
-        .MobileFilterBar_chips {
-            margin: 4px 8px 4px 0;
-        }
+    .MobileFilterBar_chips {
+      margin: 4px 8px 4px 0;
     }
+  }
 }
 
 .Filter_Modal_Header_Container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
-    padding: 16px;
-    background-color: #fff;
-    border-bottom: 1px solid #dbdbdb;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  padding: 16px;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;
 
-    .Filter_Modal_Header_Clear {
-        justify-self: flex-start;
-        font-size: 13px;
-        letter-spacing: 1px;
-        color: #9b9b9b;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-    }
+  .Filter_Modal_Header_Clear {
+    justify-self: flex-start;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #9b9b9b;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
 
-    .Filter_Modal_Header_Heading {
-        justify-self: center;
-        font-size: 21px;
-        letter-spacing: 1px;
-        color: #333333;
-    }
+  .Filter_Modal_Header_Heading {
+    justify-self: center;
+    font-size: 21px;
+    letter-spacing: 1px;
+    color: #333333;
+  }
 
-    .Filter_Modal_Header_Close {
-        justify-self: flex-end;
-        color: #333333;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-    }
+  .Filter_Modal_Header_Close {
+    justify-self: flex-end;
+    color: #333333;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
 }
 
 .Filter_Modal_Footer_Container {
-    padding: 16px;
-    border-top: 1px solid #dbdbdb;
+  padding: 16px;
+  border-top: 1px solid #dbdbdb;
 
-    .Filter_Modal_Footer_Show {
-        width: 100%;
-        background-color: #fff;
-        border: 1px solid #333333;
-        color: #333333;
-        border-radius: 3px;
-        font-size: 12px;
-        letter-spacing: 1px;
-        padding: 8px;
-        cursor: pointer;
-    }
+  .Filter_Modal_Footer_Show {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #333333;
+    color: #333333;
+    border-radius: 3px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 8px;
+    cursor: pointer;
+  }
 
-    .Filter_Modal_Footer_Show:hover {
-        border: 1px solid #e15a1d;
-        color: #e15a1d;
-    }
+  .Filter_Modal_Footer_Show:hover {
+    border: 1px solid #e15a1d;
+    color: #e15a1d;
+  }
 }
